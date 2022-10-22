@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <title>Registro de usuario</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <header></header>
+        <main>
+            <form action="/register" method="POST">
+                <div>
+                <label for="fullname">Nombre y apellido
+                    <input placeholder="Ingresar nombre y apellido" type="text" name="fullname">
+                </label>
+                </div>
+
+                <div>
+                <label for="username">Nombre de Usuario
+                    <input placeholder="Ingresar nombre de usuario" type="text" name="username">
+                </label>
+                </div>
+
+                <div>
+                <label for="datename">Fecha de nacimiento
+                    <input placeholder="Ingresar fecha de nacimiento" type="date" name="datename">
+                </label>
+                </div>
+
+                <div>
+                <label for="direccion">Domicilio
+                    <input placeholder="Ingrese calle y altura" type="text" name="direccion">
+                </label>
+                </div>
+
+                <div>
+                <label for="userprofile">Perfil del usuario
+                    <input type="radio" name="userprofile" value="Vendedor">Vendedor
+                    <input type="radio" name="userprofile" value="Usuario">Usuario
+                </label>
+                </div>
+
+                <div>
+                <label for="categorias">Categorías de interés: </label>
+                <input type="checkbox" name="categorias" value="Electro">Electro
+                <input type="checkbox" name="categorias" value="Moda">Moda
+                <input type="checkbox" name="categorias" value="Hogar">Hogar
+                <input type="checkbox" name="categorias" value="Juguetería">Juguetería
+                <input type="checkbox" name="categorias" value="Vida sana">Vida sana
+                </div>
+                
+                <div>
+                <label for="imgprofile">Foto de usuario
+                    <input type="file" name="imgprofile">
+                </label>
+                </div>
+
+                <div>
+                <label for="password">Contraseña
+                    <input type="text" name="password">
+                </label>
+                </div>
+
+                <div>
+                <label for="password">Confirmar contraseña
+                    <input type="text" name="password">
+                </label>
+                </div>
+                
+                <input type="submit" value="Enviar datos">
+                <input type="reset" value="Borrar datos">
+        </form>
+        </main>
+        <footer></footer>
+    </body>
+</html>
